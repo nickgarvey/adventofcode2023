@@ -3,6 +3,7 @@ use clap::Parser;
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 #[derive(Parser)]
 #[command(name = "nickgarvey Advent of Code 2023")]
@@ -43,6 +44,8 @@ fn main() {
         ("day2", "part2") => println!("{}", day2::part2(&path)),
         ("day3", "part1") => println!("{}", day3::part1(&path)),
         ("day3", "part2") => println!("{}", day3::part2(&path)),
+        ("day4", "part1") => println!("{}", day4::part1(&path)),
+        ("day4", "part2") => println!("{}", day4::part2(&path)),
         _ => panic!("Bad day/part number. Args should be: day1 part1"),
     }
 }
