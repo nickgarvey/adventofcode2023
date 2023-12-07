@@ -6,6 +6,7 @@ mod day3;
 mod day4;
 mod day5;
 mod day6;
+mod day7;
 
 #[derive(Parser)]
 #[command(name = "nickgarvey Advent of Code 2023")]
@@ -52,6 +53,8 @@ fn main() {
         ("day5", "part2") => println!("{}", day5::part2(&path).unwrap()),
         ("day6", "part1") => println!("{}", day6::part1(&path).unwrap()),
         ("day6", "part2") => println!("{}", day6::part2(&path).unwrap()),
+        ("day7", "part1") => println!("{}", day7::part1(&path).unwrap()),
+        ("day7", "part2") => println!("{}", day7::part2(&path).unwrap()),
         _ => panic!("Bad day/part number. Args should be: day1 part1"),
     }
 }
